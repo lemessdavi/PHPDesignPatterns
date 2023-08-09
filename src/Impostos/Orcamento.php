@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Impsotos;
+namespace DesignPatterns\Impostos;
 
 class Orcamento
 {

@@ -2,12 +2,12 @@
 
 namespace DesignPatterns;
 
-use DesignPatterns\Impsotos\Imposto;
-use DesignPatterns\Impsotos\Orcamento;
+use DesignPatterns\Impostos\Imposto;
+use DesignPatterns\Impostos\Orcamento;
 
 class CalculadoraDeImpostos
 {
     public function calcularImposto(Orcamento $orcamento, Imposto $imposto):float{
-        return $imposto->calcularImposto($orcamento->valor);
+        return $imposto->calcularImposto($orcamento);
     }
 }

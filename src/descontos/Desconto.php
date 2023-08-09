@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\descontos;
 
-use DesignPatterns\Impsotos\Orcamento;
+use DesignPatterns\Impostos\Orcamento;
 
 abstract class Desconto
 {

@@ -1,8 +1,10 @@
+
 <?php
 
 use DesignPatterns\CalculadoraDeImpostos;
-use DesignPatterns\Impsotos\ICMS;
-use DesignPatterns\Impsotos\Orcamento;
+use DesignPatterns\Impostos\ICMS;
+use DesignPatterns\Impostos\IJPT;
+use DesignPatterns\Impostos\Orcamento;
 
 require 'vendor/autoload.php';
 
@@ -15,15 +17,27 @@ require 'vendor/autoload.php';
 ////$imposto = new ISS();
 //
 //echo $calculadora->calcularImposto($orcamento, $imposto);
+//
+//$calculadora = new \DesignPatterns\CalculadoraDeDescontos();
+//
+//$orcamento = new Orcamento();
+//$orcamento->valor = 1000;
+//$orcamento->qntdItens = 2;
+//
+//echo $calculadora->calcularDesconto($orcamento);
 
-$calculadora = new \DesignPatterns\CalculadoraDeDescontos();
+
+
+$calculadora = new CalculadoraDeImpostos();
 
 $orcamento = new Orcamento();
-$orcamento->valor = 1000;
+$orcamento->valor = 100;
 $orcamento->qntdItens = 2;
 
-echo $calculadora->calcularDesconto($orcamento);
+$imposto = new IJPT();
+//$imposto = new ISS();
 
+echo $calculadora->calcularImposto($orcamento, $imposto);
 
 
 

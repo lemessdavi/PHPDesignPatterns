@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\descontos;
 
-use DesignPatterns\Impsotos\Orcamento;
+use DesignPatterns\Impostos\Orcamento;
 
 class DescontoMaisDe500Reais extends Desconto
 {

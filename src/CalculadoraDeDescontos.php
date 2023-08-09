@@ -5,7 +5,7 @@ namespace DesignPatterns;
 use DesignPatterns\descontos\DescontoMaisDe500Reais;
 use DesignPatterns\descontos\DescontoMaisDe5Itens;
 use DesignPatterns\descontos\SemDeconto;
-use DesignPatterns\Impsotos\Orcamento;
+use DesignPatterns\Impostos\Orcamento;
 
 class CalculadoraDeDescontos
 {
